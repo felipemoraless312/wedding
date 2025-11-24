@@ -68,7 +68,11 @@ export function Timeline() {
                         <img
                           src={event.image}
                           alt={`${event.title} photo`}
-                          className="w-full md:w-80 h-44 object-cover rounded-lg mx-auto"
+                          className={`w-full rounded-lg mx-auto ${
+                            event.image === '/8.jpeg' 
+                              ? 'md:w-48 h-auto object-contain' 
+                              : 'md:w-80 h-44 object-cover'
+                          }`}
                         />
                       </div>
                       <div className={`inline-block ${isEven ? 'md:mr-0 md:ml-auto' : ''}`}>

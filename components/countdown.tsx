@@ -36,7 +36,7 @@ export function Countdown() {
       {/* Background photo for countdown */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/3.jpg"
+          src="/3.png"
           alt="Countdown background"
           className="w-full h-full object-cover"
         />

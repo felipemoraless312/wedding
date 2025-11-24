@@ -1,4 +1,4 @@
-import { Gift, ExternalLink, Heart } from "lucide-react"
+import { Gift, ExternalLink, Heart, Banknote, CreditCard } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
@@ -21,7 +21,8 @@ export function GiftRegistry() {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto mb-10 md:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 md:mb-12">
+            {/* Liverpool Card */}
             <Card className="p-6 md:p-8 bg-card hover:shadow-lg transition-shadow duration-300">
               <div className="flex flex-col gap-4 md:gap-6 h-full">
                 <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mx-auto">
@@ -50,6 +51,33 @@ export function GiftRegistry() {
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
+              </div>
+            </Card>
+
+            {/* Monetary Gift Card */}
+            <Card className="p-6 md:p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+              <div className="flex flex-col gap-4 md:gap-6 h-full">
+                <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mx-auto">
+                  <Banknote className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+                </div>
+                <div className="flex-1 text-center">
+                  <h3 className="text-xl md:text-2xl font-sans font-semibold text-foreground mb-3">Regalo Monetario</h3>
+                  <div className="space-y-3 pt-2">
+                    <div className="bg-muted/50 rounded-lg p-3 md:p-4">
+                      <div className="flex items-center justify-center gap-2 mb-2">
+                        <CreditCard className="h-4 w-4 text-muted-foreground" />
+                        <span className="text-xs md:text-sm font-medium text-muted-foreground">Transferencia bancaria</span>
+                      </div>
+                      <div className="space-y-1">
+                        <p className="text-xs text-muted-foreground">BBVA Bancomer</p>
+                        <p className="text-sm md:text-base font-semibold text-foreground font-mono">2607128681</p>
+                      </div>
+                    </div>
+                    <div className="text-xs md:text-sm text-muted-foreground">
+                      O en efectivo el día del evento
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>

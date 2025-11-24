@@ -32,7 +32,7 @@ export function EventDetails() {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-sans font-semibold text-foreground">Recepción</h3>
-                <p className="text-sm text-muted-foreground">6:30 PM</p>
+                <p className="text-sm text-muted-foreground">Llegada de invitados a las 6:30 PM</p>
               </div>
             </Card>
 
@@ -42,7 +42,7 @@ export function EventDetails() {
                   <Flower className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-sans font-semibold text-foreground">Inicio de protocolo</h3>
-                <p className="text-sm text-muted-foreground">7:00 PM</p>
+                <p className="text-sm text-muted-foreground">La ceremonia será puntual a las 7:00 PM</p>
               </div>
             </Card>
 
@@ -52,7 +52,7 @@ export function EventDetails() {
                   <PartyPopper className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-sans font-semibold text-foreground">Fiesta</h3>
-                <p className="text-sm text-muted-foreground">Música, baile y alegría</p>
+                <p className="text-sm text-muted-foreground">Música y alegría</p>
               </div>
             </Card>
 
@@ -78,6 +78,12 @@ export function EventDetails() {
             <h3 className="text-xl font-sans font-semibold text-foreground mb-4 text-center">Código de Vestimenta</h3>
             <p className="text-center text-muted-foreground text-pretty">
               Formal / Etiqueta · Por favor no usar blanco ni verde
+            </p>
+          </Card>
+
+          <Card className="p-6 bg-card border-accent/20 mt-4">
+            <p className="text-center text-muted-foreground text-pretty text-sm">
+              Amamos a los niños, pero en esta ocasión preferimos que se queden en casa para la comodidad de todos
             </p>
           </Card>
         </div>
