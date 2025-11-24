@@ -16,7 +16,9 @@ export function GiftRegistry() {
             </h2>
             <div className="h-px w-20 md:w-24 bg-accent mx-auto mb-6" />
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed px-4">
-              Tu presencia es nuestro mayor regalo. Si deseas tener un detalle con nosotros, hemos preparado nuestra
+             Tu presencia es nuestro mayor regalo. 
+             Si deseas tener un detállele con nosotros, puedes hacerlo desde nuestra mesa de regalos, por medio de certificados ya que gracias a Dios , 
+             con todos estos años juntos contamos con nuestras cosas del hogar. Tu presencia es nuestro mayor regalo. Si deseas tener un detalle con nosotros, hemos preparado nuestra
               mesa de regalos para facilitar tu elección y ayudarnos a comenzar esta nueva etapa juntos.
             </p>
           </div>

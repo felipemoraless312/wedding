@@ -25,7 +25,7 @@ export function Timeline() {
     },
     {
       icon: Heart,
-      title: 'Hoy Nos Casamos',
+      title: 'Nos Casamos',
       description: 'Han pasado 24 años desde aquel inicio "al revés", pero aquí estamos, frente a frente, con el corazón latiendo igual de fuerte que el primer día, convencidos de que el amor lo puede todo.',
       image: '/9.jpeg'
     }
