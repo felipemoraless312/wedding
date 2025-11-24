@@ -20,7 +20,7 @@ export function Timeline() {
       icon: Heart,
       date: '',
       title: 'Un Sueño Cumplido',
-      description: 'Con el paso de los años, y siendo aún jóvenes, la vida nos premio con nuestro primer hijo, Hamiel, una viva copia papá. Ocho años después, la familia se iluminó con la llegada de nuestra princesa Victoria. Juntos fuimos creciendo, aprendiendo y alimentando este amor que hoy nos sostiene más fuerte que nunca.',
+      description: 'Con el paso de los años, y siendo aún jóvenes, la vida nos premio con nuestro primer hijo, Hamiel, una viva copia de su padre. Ocho años después, la familia se iluminó con la llegada de nuestra princesa Victoria. Juntos fuimos creciendo, aprendiendo y alimentando este amor que hoy nos sostiene más fuerte que nunca.',
       image: '/6.jpeg'
     },
     {
@@ -68,11 +68,7 @@ export function Timeline() {
                         <img
                           src={event.image}
                           alt={`${event.title} photo`}
-                          className={`w-full rounded-lg mx-auto ${
-                            event.image === '/8.jpeg' 
-                              ? 'md:w-48 h-auto object-contain' 
-                              : 'md:w-80 h-44 object-cover'
-                          }`}
+                          className="w-full md:w-auto md:max-w-md rounded-lg mx-auto"
                         />
                       </div>
                       <div className={`inline-block ${isEven ? 'md:mr-0 md:ml-auto' : ''}`}>

@@ -32,7 +32,7 @@ export function Countdown() {
   }, [weddingDate])
 
   return (
-    <section className="relative py-12 md:py-20 text-white min-h-[60vh] md:min-h-[80vh] lg:min-h-[90vh] flex flex-col justify-between">
+    <section className="relative py-12 md:py-22 text-white min-h-[60vh] md:min-h-[80vh] lg:min-h-[90vh]">
       {/* Background photo for countdown */}
       <div className="absolute inset-0 z-0">
         <img
@@ -42,55 +42,50 @@ export function Countdown() {
         />
       </div>
       
-      <div className="container mx-auto px-4 relative z-10 pt-8 md:pt-12">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center">
-            <h2 className="font-sans text-1xl md:text-2xl font-bold mb-1 text-balance text-white">
-              Cuenta Regresiva
-            </h2>
-          </div>
+      {/* Countdown en la parte superior derecha */}
+      <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
+        <div className="text-right mb-3">
+          <h2 className="font-sans text-sm md:text-base font-semibold text-white">
+            Cuenta Regresiva
+          </h2>
         </div>
-      </div>
+        
+        <div className="flex gap-2 md:gap-3">
+          <Card className="p-2 md:p-3 text-center bg-white/10 backdrop-blur-sm border-white/20 min-w-[50px] md:min-w-[60px]">
+            <div className="flex flex-col items-center">
+              <span className="text-xl md:text-2xl font-sans font-bold text-white tabular-nums">
+                {timeLeft.days}
+              </span>
+              <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wide mt-1">Días</div>
+            </div>
+          </Card>
 
-      <div className="container mx-auto px-4 relative z-10 pb-8 md:pb-12">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex gap-4 overflow-x-auto md:grid md:grid-cols-4 md:gap-6 px-2 md:px-0">
-            <Card className="p-3 md:p-6 text-center bg-transparent border-0 min-w-[110px] md:min-w-0 snap-start">
-              <div className="flex flex-col h-full justify-end items-center pb-2">
-                <span className="text-[clamp(1.5rem,5vw,2.5rem)] md:text-[clamp(2.5rem,6vw,4rem)] lg:text-[clamp(3rem,5vw,5rem)] font-sans font-bold inline-block text-white px-3 py-1 rounded tabular-nums">
-                  {timeLeft.days}
-                </span>
-                <div className="text-xs md:text-sm text-white uppercase tracking-wide mt-2">Días</div>
-              </div>
-            </Card>
+          <Card className="p-2 md:p-3 text-center bg-white/10 backdrop-blur-sm border-white/20 min-w-[50px] md:min-w-[60px]">
+            <div className="flex flex-col items-center">
+              <span className="text-xl md:text-2xl font-sans font-bold text-white tabular-nums">
+                {timeLeft.hours}
+              </span>
+              <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wide mt-1">Hrs</div>
+            </div>
+          </Card>
 
-            <Card className="p-3 md:p-6 text-center bg-transparent border-0 min-w-[110px] md:min-w-0 snap-start">
-              <div className="flex flex-col h-full justify-end items-center pb-2">
-                <span className="text-[clamp(1.5rem,5vw,2.5rem)] md:text-[clamp(2.5rem,6vw,4rem)] lg:text-[clamp(3rem,5vw,5rem)] font-sans font-bold inline-block text-white px-3 py-1 rounded tabular-nums">
-                  {timeLeft.hours}
-                </span>
-                <div className="text-xs md:text-sm text-white uppercase tracking-wide mt-2">Horas</div>
-              </div>
-            </Card>
+          <Card className="p-2 md:p-3 text-center bg-white/10 backdrop-blur-sm border-white/20 min-w-[50px] md:min-w-[60px]">
+            <div className="flex flex-col items-center">
+              <span className="text-xl md:text-2xl font-sans font-bold text-white tabular-nums">
+                {timeLeft.minutes}
+              </span>
+              <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wide mt-1">Min</div>
+            </div>
+          </Card>
 
-            <Card className="p-3 md:p-6 text-center bg-transparent border-0 min-w-[110px] md:min-w-0 snap-start">
-              <div className="flex flex-col h-full justify-end items-center pb-2">
-                <span className="text-[clamp(1.5rem,5vw,2.5rem)] md:text-[clamp(2.5rem,6vw,4rem)] lg:text-[clamp(3rem,5vw,5rem)] font-sans font-bold inline-block text-white px-3 py-1 rounded tabular-nums">
-                  {timeLeft.minutes}
-                </span>
-                <div className="text-xs md:text-sm text-white uppercase tracking-wide mt-2">Minutos</div>
-              </div>
-            </Card>
-
-            <Card className="p-3 md:p-6 text-center bg-transparent border-0 min-w-[110px] md:min-w-0 snap-start">
-              <div className="flex flex-col h-full justify-end items-center pb-2">
-                <span className="text-[clamp(1.5rem,5vw,2.5rem)] md:text-[clamp(2.5rem,6vw,4rem)] lg:text-[clamp(3rem,5vw,5rem)] font-sans font-bold inline-block text-white px-3 py-1 rounded tabular-nums">
-                  {timeLeft.seconds}
-                </span>
-                <div className="text-xs md:text-sm text-white uppercase tracking-wide mt-2">Segundos</div>
-              </div>
-            </Card>
-          </div>
+          <Card className="p-2 md:p-3 text-center bg-white/10 backdrop-blur-sm border-white/20 min-w-[50px] md:min-w-[60px]">
+            <div className="flex flex-col items-center">
+              <span className="text-xl md:text-2xl font-sans font-bold text-white tabular-nums">
+                {timeLeft.seconds}
+              </span>
+              <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wide mt-1">Seg</div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

@@ -83,7 +83,7 @@ export function EventDetails() {
 
           <Card className="p-6 bg-card border-accent/20 mt-4">
             <p className="text-center text-muted-foreground text-pretty text-sm">
-              Amamos a los niños, pero en esta ocasión preferimos que se queden en casa para la comodidad de todos
+              Amamos a las niñas y a los niños pero en esta ocasión, para que tu también puedas disfrutar déjalos en casa.
             </p>
           </Card>
         </div>
