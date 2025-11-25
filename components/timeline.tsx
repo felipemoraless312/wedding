@@ -13,7 +13,7 @@ export function Timeline() {
       icon: Heart,
       date: '24 de noviembre de 2001',
       title: 'El Comienzo',
-      description: 'Comenzamos un noviazgo que se volvió inseparable: siempre encontrabamos la forma de vernos, aunque fuera solo por cinco minutos.',
+      description: 'Comenzamos un noviazgo que se volvió inseparable. Siempre encontrabamos la forma de vernos, aunque fuera solo por cinco minutos.',
       image: '/7.jpeg'
     },
     {
