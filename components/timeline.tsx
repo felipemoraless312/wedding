@@ -20,13 +20,13 @@ export function Timeline() {
       icon: Heart,
       date: '',
       title: 'Un Sueño Cumplido',
-      description: 'Con el paso de los años, y siendo aún jóvenes, la vida nos premio con nuestro primer hijo, Hamiel, una viva copia de su padre. Ocho años después, la familia se iluminó con la llegada de nuestra princesa Victoria. Juntos fuimos creciendo, aprendiendo y alimentando este amor que hoy nos sostiene más fuerte que nunca.',
+      description: 'Con el paso de los años, y siendo aún jóvenes, la vida nos premio con nuestro primer hijo, Hamiel. Una viva copia de su padre. 8 años después, la familia se iluminó con la llegada de nuestra princesa Victoria. Juntos fuimos creciendo, aprendiendo y alimentando este amor que hoy nos sostiene más fuerte que nunca.',
       image: '/6.jpeg'
     },
     {
       icon: Heart,
       title: 'Nos Casamos',
-      description: 'Han pasado 24 años desde aquel inicio "al revés", pero aquí estamos, frente a frente, con el corazón latiendo igual de fuerte que el primer día, convencidos de que el amor lo puede todo.',
+      description: 'Han pasado 24 años desde aquel inicio "al revés", pero aquí estamos, frente a frente, con el corazón latiendo igual de fuerte que aquel primer día, convencidos de que el amor lo puede todo.',
       image: '/9.jpeg'
     }
   ]
